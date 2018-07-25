@@ -1,0 +1,6 @@
+framework module Pods_RaweeUITests {
+  umbrella header "Pods-RaweeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
