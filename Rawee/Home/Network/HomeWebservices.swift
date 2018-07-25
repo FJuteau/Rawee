@@ -21,12 +21,17 @@ class HomeWebservices: HomeWebservicesType {
 //        Network().request(query: query, parser: webserviceParser)
         let docRef = db.collection("products")
         docRef.getDocuments(completion: { querySnapshot, err in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                for document in querySnapshot!.documents {
-                    print("\(document.documentID) => \(document.data())")
+            if let querySnapshot = querySnapshot {
+                let data = querySnapshot.documents.map { return $0.data() }
+                let homeResponse = HomeResponse(data: data)
+                print(homeResponse)
+                success(homeResponse)
+                for document in querySnapshot.documents {
+//                    print("\(document.documentID) => \(document.data())")
+                    
                 }
+            } else {
+                print("Error getting documents: \(err)")
             }
         })
     }

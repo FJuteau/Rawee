@@ -9,6 +9,11 @@
 import Foundation
 
 struct ProductHomeResponse: Codable {
-    let info: InfoProductHomeResponse
-    let pricing: PricingProductHomeResponse
+//    let info: InfoProductHomeResponse
+//    let pricing: PricingProductHomeResponse
+    
+    let id: String
+    let banner: String
+    let bookName: String
+    let thumb: String
 }

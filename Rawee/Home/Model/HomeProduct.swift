@@ -17,11 +17,18 @@ class ProductHome {
     let authorNickname: String
 
     init(from productHomeResponse: ProductHomeResponse) {
-        self.identifier = productHomeResponse.info.id
-        self.title = productHomeResponse.info.title
-        self.imageURL = URL(string: productHomeResponse.info.thumbnail)
-        self.description = productHomeResponse.info.content
-        self.priceText = productHomeResponse.pricing.amount
-        self.authorNickname = "Nil"
+//        self.identifier = productHomeResponse.info.id
+//        self.title = productHomeResponse.info.title
+//        self.imageURL = URL(string: productHomeResponse.info.thumbnail)
+//        self.description = productHomeResponse.info.content
+//        self.priceText = productHomeResponse.pricing.amount
+//        self.authorNickname = "Nil"
+                self.identifier = 1
+                self.title = productHomeResponse.bookName
+                self.imageURL = URL(string: productHomeResponse.thumb)
+                self.description = "productHomeResponse.info.content"
+                self.priceText = "productHomeResponse.pricing.amount"
+                self.authorNickname = "Nil"
+
     }
 }
