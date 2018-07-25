@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import FirebaseCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         self.applicationCoordinator = applicationCoordinator
 
+        FIRApp.configure()
         applicationCoordinator.start()
         return true
     }

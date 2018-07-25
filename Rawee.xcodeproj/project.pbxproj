@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12B440A08966C988A62EBEFA /* Pods_RaweeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963E36508ECA0843A611D1D2 /* Pods_RaweeUITests.framework */; };
+		420ECA6D2105173800EBA027 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 420ECA6C2105173700EBA027 /* GoogleService-Info.plist */; };
+		420ECA6E2105173800EBA027 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 420ECA6C2105173700EBA027 /* GoogleService-Info.plist */; };
+		420ECA6F2105173800EBA027 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 420ECA6C2105173700EBA027 /* GoogleService-Info.plist */; };
+		64ADB04A2DDE02C0C23E646B /* Pods_RaweeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172658D4069CE47CE70BB34E /* Pods_RaweeTests.framework */; };
+		C832FB7A662D78122A3F254E /* Pods_Rawee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD95A607944552B1FB71610C /* Pods_Rawee.framework */; };
 		E20F53C42101185A00BCA7A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F53C32101185A00BCA7A6 /* AppDelegate.swift */; };
 		E20F53C92101185A00BCA7A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20F53C72101185A00BCA7A6 /* Main.storyboard */; };
 		E20F53CC2101185A00BCA7A6 /* Rawee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E20F53CA2101185A00BCA7A6 /* Rawee.xcdatamodeld */; };
@@ -101,6 +107,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		172658D4069CE47CE70BB34E /* Pods_RaweeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaweeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C0CFD93453F78527AFD929A /* Pods-Rawee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rawee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rawee/Pods-Rawee.debug.xcconfig"; sourceTree = "<group>"; };
+		420ECA6C2105173700EBA027 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		50EBC9E2D61F0B6B2CF35871 /* Pods-RaweeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaweeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaweeUITests/Pods-RaweeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		72672CA5F534E0A12223B5B7 /* Pods-RaweeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaweeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaweeUITests/Pods-RaweeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		751DB8B9A0F8F253BBC50A3F /* Pods-Rawee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rawee.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rawee/Pods-Rawee.release.xcconfig"; sourceTree = "<group>"; };
+		963E36508ECA0843A611D1D2 /* Pods_RaweeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaweeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD95A607944552B1FB71610C /* Pods_Rawee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rawee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85D6D7B8FDE984118C05EF1 /* Pods-RaweeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaweeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaweeTests/Pods-RaweeTests.release.xcconfig"; sourceTree = "<group>"; };
 		E20F53C02101185A00BCA7A6 /* Rawee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rawee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20F53C32101185A00BCA7A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E20F53C82101185A00BCA7A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -181,6 +196,7 @@
 		E20F55402101267C00BCA7A6 /* LibraryBookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryBookTableViewCell.swift; sourceTree = "<group>"; };
 		E20F55412101267C00BCA7A6 /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		E20F55422101267C00BCA7A6 /* LibraryCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryCoordinator.swift; sourceTree = "<group>"; };
+		E79C11145402EAD9B8AC7528 /* Pods-RaweeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaweeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaweeTests/Pods-RaweeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +215,7 @@
 				E20F5531210125AD00BCA7A6 /* ZFDragableModalTransition.framework in Frameworks */,
 				E20F5532210125AD00BCA7A6 /* ZipArchive.framework in Frameworks */,
 				E20F5533210125AD00BCA7A6 /* MenuItemKit.framework in Frameworks */,
+				C832FB7A662D78122A3F254E /* Pods_Rawee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +223,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64ADB04A2DDE02C0C23E646B /* Pods_RaweeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,12 +231,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12B440A08966C988A62EBEFA /* Pods_RaweeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D9C2A756EC0F7400F5892292 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C0CFD93453F78527AFD929A /* Pods-Rawee.debug.xcconfig */,
+				751DB8B9A0F8F253BBC50A3F /* Pods-Rawee.release.xcconfig */,
+				E79C11145402EAD9B8AC7528 /* Pods-RaweeTests.debug.xcconfig */,
+				D85D6D7B8FDE984118C05EF1 /* Pods-RaweeTests.release.xcconfig */,
+				50EBC9E2D61F0B6B2CF35871 /* Pods-RaweeUITests.debug.xcconfig */,
+				72672CA5F534E0A12223B5B7 /* Pods-RaweeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E20F53B72101185A00BCA7A6 = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +259,7 @@
 				E20F53E52101185D00BCA7A6 /* RaweeUITests */,
 				E20F53C12101185A00BCA7A6 /* Products */,
 				E20F551D210125AC00BCA7A6 /* Frameworks */,
+				D9C2A756EC0F7400F5892292 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,6 +290,7 @@
 				E20F54E221011C3E00BCA7A6 /* SignUp */,
 				E20F551621011C8000BCA7A6 /* Resources */,
 				E20F53D22101185D00BCA7A6 /* Info.plist */,
+				420ECA6C2105173700EBA027 /* GoogleService-Info.plist */,
 			);
 			path = Rawee;
 			sourceTree = "<group>";
@@ -574,6 +608,9 @@
 				E20F5521210125AC00BCA7A6 /* RealmSwift.framework */,
 				E20F5526210125AD00BCA7A6 /* ZFDragableModalTransition.framework */,
 				E20F5527210125AD00BCA7A6 /* ZipArchive.framework */,
+				CD95A607944552B1FB71610C /* Pods_Rawee.framework */,
+				172658D4069CE47CE70BB34E /* Pods_RaweeTests.framework */,
+				963E36508ECA0843A611D1D2 /* Pods_RaweeUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -640,10 +677,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E20F53EB2101185D00BCA7A6 /* Build configuration list for PBXNativeTarget "Rawee" */;
 			buildPhases = (
+				8770E4ED690F518828ABC5C8 /* [CP] Check Pods Manifest.lock */,
 				E20F53BC2101185A00BCA7A6 /* Sources */,
 				E20F53BD2101185A00BCA7A6 /* Frameworks */,
 				E20F53BE2101185A00BCA7A6 /* Resources */,
 				E20F5534210125D000BCA7A6 /* Cartage Script */,
+				E41F3D7710F60CFEF34C38B7 /* [CP] Embed Pods Frameworks */,
+				420ECA7121051C1600EBA027 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -658,6 +698,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E20F53EE2101185D00BCA7A6 /* Build configuration list for PBXNativeTarget "RaweeTests" */;
 			buildPhases = (
+				9B081AED8C6D53BEA0BA9CFF /* [CP] Check Pods Manifest.lock */,
 				E20F53D32101185D00BCA7A6 /* Sources */,
 				E20F53D42101185D00BCA7A6 /* Frameworks */,
 				E20F53D52101185D00BCA7A6 /* Resources */,
@@ -676,6 +717,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E20F53F12101185D00BCA7A6 /* Build configuration list for PBXNativeTarget "RaweeUITests" */;
 			buildPhases = (
+				B4907D8B336A615C89440D8B /* [CP] Check Pods Manifest.lock */,
 				E20F53DE2101185D00BCA7A6 /* Sources */,
 				E20F53DF2101185D00BCA7A6 /* Frameworks */,
 				E20F53E02101185D00BCA7A6 /* Resources */,
@@ -745,6 +787,7 @@
 				E20F550021011C3E00BCA7A6 /* HomeProductTableViewCell.xib in Resources */,
 				E20F550C21011C3E00BCA7A6 /* ProductSheetViewController.xib in Resources */,
 				E20F53C92101185A00BCA7A6 /* Main.storyboard in Resources */,
+				420ECA6D2105173800EBA027 /* GoogleService-Info.plist in Resources */,
 				E20F551121011C3E00BCA7A6 /* ReaderViewController.xib in Resources */,
 				E20F55472101267C00BCA7A6 /* LibraryBookTableViewCell.xib in Resources */,
 			);
@@ -754,6 +797,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420ECA6E2105173800EBA027 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,12 +805,81 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420ECA6F2105173800EBA027 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		420ECA7121051C1600EBA027 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
+		};
+		8770E4ED690F518828ABC5C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rawee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B081AED8C6D53BEA0BA9CFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RaweeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4907D8B336A615C89440D8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RaweeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E20F5534210125D000BCA7A6 /* Cartage Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -792,6 +905,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		E41F3D7710F60CFEF34C38B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Rawee/Pods-Rawee-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rawee/Pods-Rawee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1022,10 +1153,11 @@
 		};
 		E20F53EC2101185D00BCA7A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C0CFD93453F78527AFD929A /* Pods-Rawee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 32Y6VPRZSW;
+				DEVELOPMENT_TEAM = LH3NPG2M8S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -1044,10 +1176,11 @@
 		};
 		E20F53ED2101185D00BCA7A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751DB8B9A0F8F253BBC50A3F /* Pods-Rawee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 32Y6VPRZSW;
+				DEVELOPMENT_TEAM = LH3NPG2M8S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -1066,6 +1199,7 @@
 		};
 		E20F53EF2101185D00BCA7A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E79C11145402EAD9B8AC7528 /* Pods-RaweeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1087,6 +1221,7 @@
 		};
 		E20F53F02101185D00BCA7A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D85D6D7B8FDE984118C05EF1 /* Pods-RaweeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1108,6 +1243,7 @@
 		};
 		E20F53F22101185D00BCA7A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50EBC9E2D61F0B6B2CF35871 /* Pods-RaweeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1128,6 +1264,7 @@
 		};
 		E20F53F32101185D00BCA7A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72672CA5F534E0A12223B5B7 /* Pods-RaweeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
