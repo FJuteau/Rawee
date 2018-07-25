@@ -4,6 +4,7 @@ use_frameworks!
 target 'Rawee' do
 
 	pod 'Firebase/Core'
+	pod 'Firebase/Firestore'
 	pod 'Fabric'
 	pod 'Crashlytics'
   

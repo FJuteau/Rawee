@@ -8,7 +8,9 @@
 
 import UIKit
 import CoreData
-import FirebaseCore
+import Firebase
+
+let db = Firestore.firestore()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,7 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         self.applicationCoordinator = applicationCoordinator
 
-        FIRApp.configure()
+        FirebaseApp.configure()
+        
         applicationCoordinator.start()
         return true
     }
