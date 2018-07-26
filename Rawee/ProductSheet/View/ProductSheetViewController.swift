@@ -30,7 +30,7 @@ class ProductSheetViewController: UIViewController {
         viewModel.viewDidLoad()
     }
 
-    func prepare(withProductId productId: Int) {
+    func prepare(withProductId productId: String) {
         viewModel = ProductSheetViewModel(repository: ProductSheetRepository(webservices: ProductSheetWebservices()), productId: productId)
     }
 

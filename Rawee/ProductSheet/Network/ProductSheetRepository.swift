@@ -9,7 +9,7 @@
 import Foundation
 
 protocol ProductSheetRepositoryType {
-    func getProductSheet(from productId: Int, success: @escaping ((ProductSheet) -> Void), failure: @escaping ((Error) -> Void))
+    func getProductSheet(from productId: String, success: @escaping ((ProductSheet) -> Void), failure: @escaping ((Error) -> Void))
 }
 
 class ProductSheetRepository: ProductSheetRepositoryType {
@@ -21,7 +21,7 @@ class ProductSheetRepository: ProductSheetRepositoryType {
         self.webservices = webservices
     }
 
-    func getProductSheet(from productId: Int, success: @escaping ((ProductSheet) -> Void), failure: @escaping ((Error) -> Void)) {
+    func getProductSheet(from productId: String, success: @escaping ((ProductSheet) -> Void), failure: @escaping ((Error) -> Void)) {
         webservices.getProduct(id: productId, success: { response in
             success(ProductSheetParser.productSheet(from: response))
         }) { error in

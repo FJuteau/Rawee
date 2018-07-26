@@ -1,5 +1,5 @@
 //
-//  HomeProductTableViewCell.swift
+//  HomeProductCollectionViewCell.swift
 //  TabBarCoordinator
 //
 //  Created by François Juteau on 13/05/2018.
@@ -8,14 +8,11 @@
 
 import UIKit
 
-class HomeProductTableViewCell: UITableViewCell {
+class HomeProductCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var roundedView: UIView!
     @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var authorLabel: UILabel!
 
     // Dependencies
 
@@ -26,10 +23,7 @@ class HomeProductTableViewCell: UITableViewCell {
     
     func configure(with product: ProductHome) {
         titleLabel.text = product.title
-        descriptionLabel.text = product.description
-        priceLabel.text = product.priceText
-        authorLabel.text = product.authorNickname
-        if let imageURL = product.imageURL {
+        if let imageURL = product.thumbURL {
             productImageView.setImageWithURL(imageURL)
         }
     }

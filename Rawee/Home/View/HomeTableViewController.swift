@@ -9,10 +9,10 @@
 import UIKit
 
  protocol HomeTableViewControllerDelegate: class {
-    func didSelect(productId: Int)
+    func didSelect(productId: String)
  }
 
-class HomeTableViewController: UITableViewController {
+class HomeTableViewController: UICollectionViewController {
 
     let viewModel: HomeViewModel = HomeViewModel(repository: HomeRepository(webservices: HomeWebservices()))
     let dataSource: HomeTableViewDataSource = HomeTableViewDataSource()
@@ -25,39 +25,52 @@ class HomeTableViewController: UITableViewController {
         
         bind(to: viewModel)
 
-        tableView.register(HomeProductTableViewCell.nib, forCellReuseIdentifier: HomeProductTableViewCell.storyboardIdentifier)
+        collectionView?.register(HomeProductCollectionViewCell.nib, forCellWithReuseIdentifier: HomeProductCollectionViewCell.storyboardIdentifier)
         viewModel.viewDidLoad()
     }
 
     private func layout() {
-        tableView.backgroundColor = .applicationBackground
+        collectionView?.backgroundColor = .applicationBackground
         view.backgroundColor = .applicationBackground
         navigationController?.navigationBar.barTintColor = .raweeBackground
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.titleText]
         navigationController?.navigationBar.tintColor = .titleText
+        
     }
 
     private func bind(to viewModel: HomeViewModel) {
         viewModel.products = { [weak self] products in
             self?.dataSource.products = products
-            self?.tableView.reloadData()
+            self?.collectionView?.reloadData()
         }
+    }
+    
+    // MARK: - Static
+    
+    class var collectionViewFlowLayout: UICollectionViewLayout {
+        let collectionViewLayout = UICollectionViewFlowLayout()
+        let width = (UIScreen.main.bounds.size.width - 10) / 2
+        let height = (width * 8) / 4
+        collectionViewLayout.itemSize = CGSize(width: width, height: height)
+        collectionViewLayout.scrollDirection = UICollectionViewScrollDirection.vertical
+        return collectionViewLayout
     }
 }
 
 extension HomeTableViewController {
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataSource.numberOfProduct(in: section)
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeProductTableViewCell.storyboardIdentifier) as? HomeProductTableViewCell else { return UITableViewCell() }
-
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeProductCollectionViewCell.storyboardIdentifier, for: indexPath) as? HomeProductCollectionViewCell else { return UICollectionViewCell() }
+        
         cell.configure(with: dataSource.product(at: indexPath))
         return cell
     }
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let product = dataSource.product(at: indexPath)
         delegate?.didSelect(productId: product.identifier)
     }

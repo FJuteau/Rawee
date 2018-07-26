@@ -9,15 +9,15 @@
 import Foundation
 
 protocol ProductSheetWebservicesType {
-    func getProduct(id: Int, success: @escaping ((ProductSheetResponse) -> Void), failure: @escaping ((Error) -> Void))
+    func getProduct(id: String, success: @escaping ((ProductSheetResponse) -> Void), failure: @escaping ((Error) -> Void))
 }
 
 class ProductSheetWebservices: ProductSheetWebservicesType {
-    func query(for id: Int) -> Query {
+    func query(for id: String) -> Query {
         return Query(method: .get, path: "v2/products/", queryItems: ["product": String(id)], parameters: nil, securityKey: nil)
     }
 
-    func getProduct(id: Int, success: @escaping ((ProductSheetResponse) -> Void), failure: @escaping ((Error) -> Void)) {
+    func getProduct(id: String, success: @escaping ((ProductSheetResponse) -> Void), failure: @escaping ((Error) -> Void)) {
         let webserviceParser = WebserviceParser<ProductSheetResponse>()
         webserviceParser.success = success
         Network().request(query: query(for: id), parser: webserviceParser)

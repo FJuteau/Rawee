@@ -16,7 +16,7 @@ class HomeCoordinator: Coordinator {
     var productSheetCoordinator: ProductSheetCoordinator?
 
     init() {
-        self.viewController = HomeTableViewController()
+        self.viewController = HomeTableViewController(collectionViewLayout: HomeTableViewController.collectionViewFlowLayout)
         self.presenter = UINavigationController(rootViewController: viewController)
 
         viewController.title = "Home"
@@ -29,7 +29,7 @@ class HomeCoordinator: Coordinator {
 }
 
 extension HomeCoordinator: HomeTableViewControllerDelegate {
-    func didSelect(productId: Int) {
+    func didSelect(productId: String) {
         let productSheetCoordinator = ProductSheetCoordinator(presenter: viewController, productId: productId)
         productSheetCoordinator.start()
 

@@ -12,9 +12,9 @@ class ProductSheetViewModel {
 
     // MARK: Dependency
     let repository: ProductSheetRepositoryType
-    let productId: Int
+    let productId: String
 
-    init(repository: ProductSheetRepositoryType, productId: Int) {
+    init(repository: ProductSheetRepositoryType, productId: String) {
         self.repository = repository
         self.productId = productId
     }

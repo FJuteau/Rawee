@@ -41,12 +41,12 @@
 		E20F54F921011C3E00BCA7A6 /* HomeWebservices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54BB21011C3D00BCA7A6 /* HomeWebservices.swift */; };
 		E20F54FA21011C3E00BCA7A6 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54BC21011C3D00BCA7A6 /* HomeRepository.swift */; };
 		E20F54FB21011C3E00BCA7A6 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54BD21011C3D00BCA7A6 /* HomeCoordinator.swift */; };
-		E20F54FC21011C3E00BCA7A6 /* HomeProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54BF21011C3D00BCA7A6 /* HomeProduct.swift */; };
+		E20F54FC21011C3E00BCA7A6 /* ProductHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54BF21011C3D00BCA7A6 /* ProductHome.swift */; };
 		E20F54FD21011C3E00BCA7A6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54C021011C3D00BCA7A6 /* Home.swift */; };
 		E20F54FE21011C3E00BCA7A6 /* HomeTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54C321011C3D00BCA7A6 /* HomeTableViewDataSource.swift */; };
 		E20F54FF21011C3E00BCA7A6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54C421011C3D00BCA7A6 /* HomeViewModel.swift */; };
-		E20F550021011C3E00BCA7A6 /* HomeProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E20F54C621011C3D00BCA7A6 /* HomeProductTableViewCell.xib */; };
-		E20F550121011C3E00BCA7A6 /* HomeProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54C721011C3D00BCA7A6 /* HomeProductTableViewCell.swift */; };
+		E20F550021011C3E00BCA7A6 /* HomeProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E20F54C621011C3D00BCA7A6 /* HomeProductCollectionViewCell.xib */; };
+		E20F550121011C3E00BCA7A6 /* HomeProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54C721011C3D00BCA7A6 /* HomeProductCollectionViewCell.swift */; };
 		E20F550221011C3E00BCA7A6 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54C821011C3D00BCA7A6 /* HomeTableViewController.swift */; };
 		E20F550321011C3E00BCA7A6 /* ProductSheetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54CB21011C3D00BCA7A6 /* ProductSheetRepository.swift */; };
 		E20F550421011C3E00BCA7A6 /* ProductSheetParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54CD21011C3D00BCA7A6 /* ProductSheetParser.swift */; };
@@ -150,12 +150,12 @@
 		E20F54BB21011C3D00BCA7A6 /* HomeWebservices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWebservices.swift; sourceTree = "<group>"; };
 		E20F54BC21011C3D00BCA7A6 /* HomeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
 		E20F54BD21011C3D00BCA7A6 /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
-		E20F54BF21011C3D00BCA7A6 /* HomeProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProduct.swift; sourceTree = "<group>"; };
+		E20F54BF21011C3D00BCA7A6 /* ProductHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductHome.swift; sourceTree = "<group>"; };
 		E20F54C021011C3D00BCA7A6 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		E20F54C321011C3D00BCA7A6 /* HomeTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewDataSource.swift; sourceTree = "<group>"; };
 		E20F54C421011C3D00BCA7A6 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		E20F54C621011C3D00BCA7A6 /* HomeProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeProductTableViewCell.xib; sourceTree = "<group>"; };
-		E20F54C721011C3D00BCA7A6 /* HomeProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProductTableViewCell.swift; sourceTree = "<group>"; };
+		E20F54C621011C3D00BCA7A6 /* HomeProductCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		E20F54C721011C3D00BCA7A6 /* HomeProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		E20F54C821011C3D00BCA7A6 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		E20F54CB21011C3D00BCA7A6 /* ProductSheetRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSheetRepository.swift; sourceTree = "<group>"; };
 		E20F54CD21011C3D00BCA7A6 /* ProductSheetParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSheetParser.swift; sourceTree = "<group>"; };
@@ -334,7 +334,6 @@
 			children = (
 				E20F54A221011C3D00BCA7A6 /* UI */,
 				E20F54A521011C3D00BCA7A6 /* Error.swift */,
-				E20F54A621011C3D00BCA7A6 /* Color */,
 				E20F54A921011C3D00BCA7A6 /* Network */,
 				E20F54AB21011C3D00BCA7A6 /* User */,
 				E20F54AE21011C3D00BCA7A6 /* Coordinator.swift */,
@@ -389,8 +388,8 @@
 		E20F54B221011C3D00BCA7A6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				E20F54B321011C3D00BCA7A6 /* Network */,
 				E20F54BD21011C3D00BCA7A6 /* HomeCoordinator.swift */,
+				E20F54B321011C3D00BCA7A6 /* Network */,
 				E20F54BE21011C3D00BCA7A6 /* Model */,
 				E20F54C121011C3D00BCA7A6 /* View */,
 			);
@@ -430,7 +429,7 @@
 		E20F54BE21011C3D00BCA7A6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E20F54BF21011C3D00BCA7A6 /* HomeProduct.swift */,
+				E20F54BF21011C3D00BCA7A6 /* ProductHome.swift */,
 				E20F54C021011C3D00BCA7A6 /* Home.swift */,
 			);
 			path = Model;
@@ -458,8 +457,8 @@
 		E20F54C521011C3D00BCA7A6 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				E20F54C621011C3D00BCA7A6 /* HomeProductTableViewCell.xib */,
-				E20F54C721011C3D00BCA7A6 /* HomeProductTableViewCell.swift */,
+				E20F54C621011C3D00BCA7A6 /* HomeProductCollectionViewCell.xib */,
+				E20F54C721011C3D00BCA7A6 /* HomeProductCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -576,6 +575,7 @@
 		E20F551621011C8000BCA7A6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E20F54A621011C3D00BCA7A6 /* Color */,
 				E20F53CD2101185D00BCA7A6 /* Assets.xcassets */,
 				E20F551721011C8000BCA7A6 /* LeChatNoir.epub */,
 			);
@@ -783,7 +783,7 @@
 				E20F54ED21011C3E00BCA7A6 /* Color.xcassets in Resources */,
 				E20F551821011C8000BCA7A6 /* LeChatNoir.epub in Resources */,
 				E20F53CE2101185D00BCA7A6 /* Assets.xcassets in Resources */,
-				E20F550021011C3E00BCA7A6 /* HomeProductTableViewCell.xib in Resources */,
+				E20F550021011C3E00BCA7A6 /* HomeProductCollectionViewCell.xib in Resources */,
 				E20F550C21011C3E00BCA7A6 /* ProductSheetViewController.xib in Resources */,
 				E20F53C92101185A00BCA7A6 /* Main.storyboard in Resources */,
 				420ECA6D2105173800EBA027 /* GoogleService-Info.plist in Resources */,
@@ -944,7 +944,7 @@
 				E20F55462101267C00BCA7A6 /* LibraryViewModel.swift in Sources */,
 				E20F54F121011C3E00BCA7A6 /* Coordinator.swift in Sources */,
 				E20F54EA21011C3E00BCA7A6 /* UIView+Helper.swift in Sources */,
-				E20F54FC21011C3E00BCA7A6 /* HomeProduct.swift in Sources */,
+				E20F54FC21011C3E00BCA7A6 /* ProductHome.swift in Sources */,
 				E20F53CC2101185A00BCA7A6 /* Rawee.xcdatamodeld in Sources */,
 				E20F550721011C3E00BCA7A6 /* PricingProductSheetResponse.swift in Sources */,
 				E20F54E721011C3E00BCA7A6 /* SettingsCoordinator.swift in Sources */,
@@ -981,7 +981,7 @@
 				E20F55442101267C00BCA7A6 /* LibraryWebservices.swift in Sources */,
 				E20F54F321011C3E00BCA7A6 /* FavoritesViewController.swift in Sources */,
 				E20F551221011C3E00BCA7A6 /* Model.swift in Sources */,
-				E20F550121011C3E00BCA7A6 /* HomeProductTableViewCell.swift in Sources */,
+				E20F550121011C3E00BCA7A6 /* HomeProductCollectionViewCell.swift in Sources */,
 				E20F54E921011C3E00BCA7A6 /* RWView.swift in Sources */,
 				E20F550321011C3E00BCA7A6 /* ProductSheetRepository.swift in Sources */,
 			);

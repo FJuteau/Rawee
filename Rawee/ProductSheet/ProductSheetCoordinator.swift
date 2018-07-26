@@ -10,11 +10,11 @@ import UIKit
 
 class ProductSheetCoordinator: Coordinator {
 
-    let productId: Int
+    let productId: String
     let presenter: UIViewController
     let viewController: ProductSheetViewController
 
-    init(presenter: UIViewController, productId: Int) {
+    init(presenter: UIViewController, productId: String) {
         self.presenter = presenter
         self.productId = productId
         self.viewController = ProductSheetViewController.instance
