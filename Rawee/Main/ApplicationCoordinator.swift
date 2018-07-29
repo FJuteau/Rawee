@@ -35,7 +35,7 @@ class ApplicationCoordinator: Coordinator {
         libraryViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
 
         let settingsCoordinator = SettingsCoordinator()
-        let settingsViewController = settingsCoordinator.viewController
+        let settingsViewController = settingsCoordinator.presenter
         settingsViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 2)
 
         tabBarItemCoordinators = [homeCoordinator, libraryCoordinator, settingsCoordinator]

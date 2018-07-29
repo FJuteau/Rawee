@@ -10,8 +10,10 @@ import UIKit
 
 class ProductSheetViewController: UIViewController {
 
-    static var instance: ProductSheetViewController {
-        return ProductSheetViewController(nibName: "ProductSheetViewController", bundle: nil)
+    static func instance(for product: ProductHome) -> ProductSheetViewController {
+        let viewController = ProductSheetViewController(nibName: "ProductSheetViewController", bundle: nil)
+        viewController.prepare(with: product)
+        return viewController
     }
 
     @IBOutlet weak var titleLabel: UILabel!
@@ -19,7 +21,6 @@ class ProductSheetViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var purchaseButton: UIButton!
-
 
     var viewModel: ProductSheetViewModel!
 
@@ -30,8 +31,8 @@ class ProductSheetViewController: UIViewController {
         viewModel.viewDidLoad()
     }
 
-    func prepare(withProductId productId: String) {
-        viewModel = ProductSheetViewModel(repository: ProductSheetRepository(webservices: ProductSheetWebservices()), productId: productId)
+    func prepare(with product: ProductHome) {
+        viewModel = ProductSheetViewModel(repository: ProductSheetRepository(webservices: ProductSheetWebservices()), product: product)
     }
 
     // MARK: Private
@@ -46,12 +47,12 @@ class ProductSheetViewController: UIViewController {
         viewModel.descriptionText = { [weak self] descriptionText in
             self?.descriptionLabel.text = descriptionText
         }
-        viewModel.priceText = { [weak self] priceText in
-            self?.priceLabel.text = priceText
-        }
-        viewModel.purchaseButtonText = { [weak self] purchaseButtonText in
-            self?.purchaseButton.setTitle(purchaseButtonText, for: .normal)
-        }
+//        viewModel.priceText = { [weak self] priceText in
+//            self?.priceLabel.text = priceText
+//        }
+//        viewModel.purchaseButtonText = { [weak self] purchaseButtonText in
+//            self?.purchaseButton.setTitle(purchaseButtonText, for: .normal)
+//        }
     }
 
 }

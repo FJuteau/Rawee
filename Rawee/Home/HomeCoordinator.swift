@@ -29,8 +29,8 @@ class HomeCoordinator: Coordinator {
 }
 
 extension HomeCoordinator: HomeTableViewControllerDelegate {
-    func didSelect(productId: String) {
-        let productSheetCoordinator = ProductSheetCoordinator(presenter: viewController, productId: productId)
+    func didSelect(product: ProductHome) {
+        let productSheetCoordinator = ProductSheetCoordinator(presenter: viewController, product: product)
         productSheetCoordinator.start()
 
         self.productSheetCoordinator = productSheetCoordinator

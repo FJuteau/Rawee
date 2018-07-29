@@ -9,7 +9,7 @@
 import UIKit
 
  protocol HomeTableViewControllerDelegate: class {
-    func didSelect(productId: String)
+    func didSelect(product: ProductHome)
  }
 
 class HomeTableViewController: UICollectionViewController {
@@ -72,6 +72,6 @@ extension HomeTableViewController {
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let product = dataSource.product(at: indexPath)
-        delegate?.didSelect(productId: product.identifier)
+        delegate?.didSelect(product: product)
     }
 }

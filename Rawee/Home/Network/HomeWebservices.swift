@@ -26,12 +26,9 @@ class HomeWebservices: HomeWebservicesType {
                 let homeResponse = HomeResponse(data: data)
                 print(homeResponse)
                 success(homeResponse)
-                for document in querySnapshot.documents {
-//                    print("\(document.documentID) => \(document.data())")
-                    
-                }
-            } else {
+            } else if let err = err {
                 print("Error getting documents: \(err)")
+                failure(err)
             }
         })
     }

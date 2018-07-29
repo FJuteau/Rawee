@@ -6,19 +6,35 @@
 //  Copyright © 2018 vente-privee. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import FirebaseUI
 
 class SettingsCoordinator: Coordinator {
 
-    let viewController: SettingsViewController
+    let presenter: UINavigationController
+    let viewController: SettingsTableViewController
 
     init() {
-        viewController = SettingsViewController()
+        self.viewController = SettingsTableViewController()
+        self.presenter = UINavigationController(rootViewController: viewController)
+        
         viewController.title = "Settings"
-        viewController.view.backgroundColor = .yellow
+        viewController.delegate = self
     }
     
     func start() {
 
+    }
+}
+
+extension SettingsCoordinator: SettingsTableViewControllerDelegate {
+    func settingsTableViewControllerShouldNavigate(to navigation: SettingsViewModel.Navigation) {
+        switch navigation {
+        case .loginScreen:
+            let authViewController = FUIAuth.defaultAuthUI()!.authViewController()
+            viewController.present(authViewController, animated: true) {
+                
+            }
+        }
     }
 }

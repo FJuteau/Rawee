@@ -12,11 +12,11 @@ class ProductSheetViewModel {
 
     // MARK: Dependency
     let repository: ProductSheetRepositoryType
-    let productId: String
+    let product: ProductHome
 
-    init(repository: ProductSheetRepositoryType, productId: String) {
+    init(repository: ProductSheetRepositoryType, product: ProductHome) {
         self.repository = repository
-        self.productId = productId
+        self.product = product
     }
     
     // MARK: - Output
@@ -24,18 +24,14 @@ class ProductSheetViewModel {
     var titleText: ((String) -> Void)?
     var imageURL: ((URL) -> Void)?
     var descriptionText: ((String) -> Void)?
-    var authorNickname: ((String) -> Void)?
-    var priceText: ((String) -> Void)?
     var purchaseButtonText: ((String) -> Void)?
 
     // MARK: - Input
 
     func viewDidLoad() {
-        repository.getProductSheet(from: productId, success: { productSheet in
+        repository.getProductSheet(from: product.identifier, success: { productSheet in
             self.titleText?(productSheet.title)
             self.descriptionText?(productSheet.description)
-            self.authorNickname?(productSheet.authorNickname)
-            self.priceText?(productSheet.authorNickname)
             self.purchaseButtonText?("PURCHASE")
             if let imageURL = productSheet.imageURL {
                 self.imageURL?(imageURL)

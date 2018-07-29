@@ -9,20 +9,15 @@
 import Foundation
 
 class ProductSheet {
-    let identifier: Int
+    let identifier: String
     let title: String
     let imageURL: URL?
     let description: String
-    let authorNickname: String
-    let priceText: String
 
-    init(from response: ProductProductSheetResponse) {
-        self.identifier = response.info.id
-        self.title = response.info.title
-        self.imageURL = URL(string: response.info.thumbnail)
-        self.description = response.info.content
-        self.priceText = response.pricing.amount
-        self.authorNickname = "Nil"
-
+    init(from response: ProductSheetResponse) {
+        self.identifier = response.id
+        self.title = response.bookName
+        self.imageURL = URL(string: response.banner)
+        self.description = response.bookDesc
     }
 }

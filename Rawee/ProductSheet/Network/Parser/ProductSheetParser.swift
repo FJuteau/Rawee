@@ -10,8 +10,7 @@ import Foundation
 
 class ProductSheetParser {
     class func productSheet(from response: ProductSheetResponse) -> ProductSheet {
-        guard let product = response.products.first else { fatalError() }
 
-        return ProductSheet(from: product)
+        return ProductSheet(from: response)
     }
 }

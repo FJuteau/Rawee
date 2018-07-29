@@ -18,8 +18,19 @@ class ProductSheetWebservices: ProductSheetWebservicesType {
     }
 
     func getProduct(id: String, success: @escaping ((ProductSheetResponse) -> Void), failure: @escaping ((Error) -> Void)) {
-        let webserviceParser = WebserviceParser<ProductSheetResponse>()
-        webserviceParser.success = success
-        Network().request(query: query(for: id), parser: webserviceParser)
+//        let webserviceParser = WebserviceParser<ProductSheetResponse>()
+//        webserviceParser.success = success
+//        Network().request(query: query(for: id), parser: webserviceParser)
+        let docRef = db.collection("products").document(id)
+        docRef.getDocument(completion: { document, err in
+            if let data = document?.data(),
+                let productSheetResponse = ProductSheetResponse(data: data) {
+                print(productSheetResponse)
+                success(productSheetResponse)
+            } else if let err = err {
+                print("Error getting documents: \(err)")
+                failure(err)
+            }
+        })
     }
 }

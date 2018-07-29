@@ -12,10 +12,10 @@ class HomeViewModel {
 
     // MARK: - Properties
 
-    var home: Home?
+    private var home: Home?
 
     // Mark: - Dependencies
-    let repository: HomeRepositoryType
+    private let repository: HomeRepositoryType
 
     init(repository: HomeRepositoryType) {
         self.repository = repository

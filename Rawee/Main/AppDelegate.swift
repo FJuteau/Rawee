@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Firebase
+import FirebaseUI
 
 let db = Firestore.firestore()
 
@@ -26,12 +27,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         self.applicationCoordinator = applicationCoordinator
 
-        FirebaseApp.configure()
+        firebaseInit()
+        autologin()
         
         applicationCoordinator.start()
         return true
     }
 
+    func application(_ app: UIApplication, open url: URL,
+                     options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+        let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String?
+        if FUIAuth.defaultAuthUI()?.handleOpen(url, sourceApplication: sourceApplication) ?? false {
+            return true
+        }
+        
+        return false
+    }
+    
+    private func firebaseInit() {
+        FirebaseApp.configure()
+        let authUI = FUIAuth.defaultAuthUI()
+        authUI?.delegate = self
+        
+        let providers: [FUIAuthProvider] = [FUIGoogleAuth()]
+        authUI?.providers = providers
+    }
+    
+    private func autologin() {
+        Auth.auth().addStateDidChangeListener({
+            auth, user in
+            if let user = user {
+                // User is signed in.
+                print(user.photoURL)
+            } else {
+                // No user is signed in.
+            }
+        })
+    }
+    
+    
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -101,5 +137,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+}
+
+extension AppDelegate: FUIAuthDelegate {
+    
 }
 

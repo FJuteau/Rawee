@@ -11,6 +11,16 @@
 		420ECA6D2105173800EBA027 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 420ECA6C2105173700EBA027 /* GoogleService-Info.plist */; };
 		420ECA6E2105173800EBA027 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 420ECA6C2105173700EBA027 /* GoogleService-Info.plist */; };
 		420ECA6F2105173800EBA027 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 420ECA6C2105173700EBA027 /* GoogleService-Info.plist */; };
+		420ECA77210CB73600EBA027 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420ECA76210CB73600EBA027 /* SettingsTableViewController.swift */; };
+		420ECA79210CB81300EBA027 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420ECA78210CB81300EBA027 /* SettingsViewModel.swift */; };
+		420ECA7D210CB8D000EBA027 /* SettingsCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420ECA7C210CB8D000EBA027 /* SettingsCellModel.swift */; };
+		420ECA81210CBAF700EBA027 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420ECA7F210CBAF700EBA027 /* SettingsTableViewCell.swift */; };
+		420ECA82210CBAF700EBA027 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420ECA80210CBAF700EBA027 /* SettingsTableViewCell.xib */; };
+		420ECA85210CD68300EBA027 /* NavigationBarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420ECA84210CD68300EBA027 /* NavigationBarFactory.swift */; };
+		420ECA86210DA8CA00EBA027 /* ProductSheetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54D421011C3D00BCA7A6 /* ProductSheetCoordinator.swift */; };
+		420ECA87210DA8CA00EBA027 /* ProductSheetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54D421011C3D00BCA7A6 /* ProductSheetCoordinator.swift */; };
+		420ECA8B210E499900EBA027 /* CTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420ECA8A210E499900EBA027 /* CTAButton.swift */; };
+		420ECA8D210E49AE00EBA027 /* CTAButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420ECA8C210E49AE00EBA027 /* CTAButton.xib */; };
 		64ADB04A2DDE02C0C23E646B /* Pods_RaweeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172658D4069CE47CE70BB34E /* Pods_RaweeTests.framework */; };
 		C832FB7A662D78122A3F254E /* Pods_Rawee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD95A607944552B1FB71610C /* Pods_Rawee.framework */; };
 		E20F53C42101185A00BCA7A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F53C32101185A00BCA7A6 /* AppDelegate.swift */; };
@@ -21,7 +31,6 @@
 		E20F53DC2101185D00BCA7A6 /* RaweeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F53DB2101185D00BCA7A6 /* RaweeTests.swift */; };
 		E20F53E72101185D00BCA7A6 /* RaweeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F53E62101185D00BCA7A6 /* RaweeUITests.swift */; };
 		E20F54E721011C3E00BCA7A6 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F549F21011C3D00BCA7A6 /* SettingsCoordinator.swift */; };
-		E20F54E821011C3E00BCA7A6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54A021011C3D00BCA7A6 /* SettingsViewController.swift */; };
 		E20F54E921011C3E00BCA7A6 /* RWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54A321011C3D00BCA7A6 /* RWView.swift */; };
 		E20F54EA21011C3E00BCA7A6 /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54A421011C3D00BCA7A6 /* UIView+Helper.swift */; };
 		E20F54EB21011C3E00BCA7A6 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F54A521011C3D00BCA7A6 /* Error.swift */; };
@@ -110,6 +119,14 @@
 		172658D4069CE47CE70BB34E /* Pods_RaweeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaweeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C0CFD93453F78527AFD929A /* Pods-Rawee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rawee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rawee/Pods-Rawee.debug.xcconfig"; sourceTree = "<group>"; };
 		420ECA6C2105173700EBA027 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		420ECA76210CB73600EBA027 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		420ECA78210CB81300EBA027 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		420ECA7C210CB8D000EBA027 /* SettingsCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellModel.swift; sourceTree = "<group>"; };
+		420ECA7F210CBAF700EBA027 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		420ECA80210CBAF700EBA027 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
+		420ECA84210CD68300EBA027 /* NavigationBarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarFactory.swift; sourceTree = "<group>"; };
+		420ECA8A210E499900EBA027 /* CTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAButton.swift; sourceTree = "<group>"; };
+		420ECA8C210E49AE00EBA027 /* CTAButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CTAButton.xib; sourceTree = "<group>"; };
 		50EBC9E2D61F0B6B2CF35871 /* Pods-RaweeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaweeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaweeUITests/Pods-RaweeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		72672CA5F534E0A12223B5B7 /* Pods-RaweeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaweeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaweeUITests/Pods-RaweeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		751DB8B9A0F8F253BBC50A3F /* Pods-Rawee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rawee.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rawee/Pods-Rawee.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,7 +147,6 @@
 		E20F53E62101185D00BCA7A6 /* RaweeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaweeUITests.swift; sourceTree = "<group>"; };
 		E20F53E82101185D00BCA7A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E20F549F21011C3D00BCA7A6 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
-		E20F54A021011C3D00BCA7A6 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E20F54A321011C3D00BCA7A6 /* RWView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWView.swift; sourceTree = "<group>"; };
 		E20F54A421011C3D00BCA7A6 /* UIView+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
 		E20F54A521011C3D00BCA7A6 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
@@ -238,6 +254,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		420ECA7A210CB8AB00EBA027 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				420ECA7E210CBADA00EBA027 /* View */,
+				420ECA7B210CB8B200EBA027 /* Login */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		420ECA7B210CB8B200EBA027 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				420ECA7C210CB8D000EBA027 /* SettingsCellModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		420ECA7E210CBADA00EBA027 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				420ECA80210CBAF700EBA027 /* SettingsTableViewCell.xib */,
+				420ECA7F210CBAF700EBA027 /* SettingsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		420ECA83210CD66100EBA027 /* Navigation Bar */ = {
+			isa = PBXGroup;
+			children = (
+				420ECA84210CD68300EBA027 /* NavigationBarFactory.swift */,
+			);
+			path = "Navigation Bar";
+			sourceTree = "<group>";
+		};
+		420ECA88210E48C900EBA027 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				420ECA89210E492A00EBA027 /* Original */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		420ECA89210E492A00EBA027 /* Original */ = {
+			isa = PBXGroup;
+			children = (
+				420ECA8C210E49AE00EBA027 /* CTAButton.xib */,
+				420ECA8A210E499900EBA027 /* CTAButton.swift */,
+			);
+			path = Original;
+			sourceTree = "<group>";
+		};
 		D9C2A756EC0F7400F5892292 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +351,7 @@
 				E20F54B221011C3D00BCA7A6 /* Home */,
 				E20F54E321011C3E00BCA7A6 /* Network */,
 				E20F54C921011C3D00BCA7A6 /* ProductSheet */,
+				E20F54D421011C3D00BCA7A6 /* ProductSheetCoordinator.swift */,
 				E20F54DC21011C3E00BCA7A6 /* Reader */,
 				E20F549E21011C3D00BCA7A6 /* Settings */,
 				E20F54E121011C3E00BCA7A6 /* SignIn */,
@@ -323,8 +391,10 @@
 		E20F549E21011C3D00BCA7A6 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				420ECA7A210CB8AB00EBA027 /* Cells */,
 				E20F549F21011C3D00BCA7A6 /* SettingsCoordinator.swift */,
-				E20F54A021011C3D00BCA7A6 /* SettingsViewController.swift */,
+				420ECA76210CB73600EBA027 /* SettingsTableViewController.swift */,
+				420ECA78210CB81300EBA027 /* SettingsViewModel.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -344,6 +414,8 @@
 		E20F54A221011C3D00BCA7A6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				420ECA88210E48C900EBA027 /* Button */,
+				420ECA83210CD66100EBA027 /* Navigation Bar */,
 				E20F54A321011C3D00BCA7A6 /* RWView.swift */,
 				E20F54A421011C3D00BCA7A6 /* UIView+Helper.swift */,
 			);
@@ -439,8 +511,8 @@
 			isa = PBXGroup;
 			children = (
 				E20F54C221011C3D00BCA7A6 /* DataSource */,
-				E20F54C421011C3D00BCA7A6 /* HomeViewModel.swift */,
 				E20F54C521011C3D00BCA7A6 /* Cell */,
+				E20F54C421011C3D00BCA7A6 /* HomeViewModel.swift */,
 				E20F54C821011C3D00BCA7A6 /* HomeTableViewController.swift */,
 			);
 			path = View;
@@ -467,7 +539,6 @@
 			isa = PBXGroup;
 			children = (
 				E20F54CA21011C3D00BCA7A6 /* Network */,
-				E20F54D421011C3D00BCA7A6 /* ProductSheetCoordinator.swift */,
 				E20F54D521011C3D00BCA7A6 /* Model */,
 				E20F54D721011C3D00BCA7A6 /* View */,
 			);
@@ -477,10 +548,10 @@
 		E20F54CA21011C3D00BCA7A6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				E20F54CB21011C3D00BCA7A6 /* ProductSheetRepository.swift */,
+				E20F54CF21011C3D00BCA7A6 /* Model */,
 				E20F54CC21011C3D00BCA7A6 /* Parser */,
 				E20F54CE21011C3D00BCA7A6 /* ProductSheetWebservices.swift */,
-				E20F54CF21011C3D00BCA7A6 /* Model */,
+				E20F54CB21011C3D00BCA7A6 /* ProductSheetRepository.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -517,8 +588,8 @@
 			children = (
 				E20F54D821011C3D00BCA7A6 /* DataSource */,
 				E20F54D921011C3D00BCA7A6 /* ProductSheetViewController.xib */,
-				E20F54DA21011C3D00BCA7A6 /* ProductSheetViewModel.swift */,
 				E20F54DB21011C3D00BCA7A6 /* ProductSheetViewController.swift */,
+				E20F54DA21011C3D00BCA7A6 /* ProductSheetViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -683,6 +754,7 @@
 				E20F53BE2101185A00BCA7A6 /* Resources */,
 				E20F5534210125D000BCA7A6 /* Cartage Script */,
 				E41F3D7710F60CFEF34C38B7 /* [CP] Embed Pods Frameworks */,
+				71FD26CB5C183E11E2240C82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -785,9 +857,11 @@
 				E20F53CE2101185D00BCA7A6 /* Assets.xcassets in Resources */,
 				E20F550021011C3E00BCA7A6 /* HomeProductCollectionViewCell.xib in Resources */,
 				E20F550C21011C3E00BCA7A6 /* ProductSheetViewController.xib in Resources */,
+				420ECA82210CBAF700EBA027 /* SettingsTableViewCell.xib in Resources */,
 				E20F53C92101185A00BCA7A6 /* Main.storyboard in Resources */,
 				420ECA6D2105173800EBA027 /* GoogleService-Info.plist in Resources */,
 				E20F551121011C3E00BCA7A6 /* ReaderViewController.xib in Resources */,
+				420ECA8D210E49AE00EBA027 /* CTAButton.xib in Resources */,
 				E20F55472101267C00BCA7A6 /* LibraryBookTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -811,6 +885,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		71FD26CB5C183E11E2240C82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Rawee/Pods-Rawee-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rawee/Pods-Rawee-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8770E4ED690F518828ABC5C8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -898,9 +1002,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Rawee/Pods-Rawee-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
@@ -910,9 +1022,17 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
@@ -936,6 +1056,7 @@
 				E20F54F821011C3E00BCA7A6 /* HomeResponse.swift in Sources */,
 				E20F550821011C3E00BCA7A6 /* ProductSheetResponse.swift in Sources */,
 				E20F554A2101267C00BCA7A6 /* LibraryCoordinator.swift in Sources */,
+				420ECA7D210CB8D000EBA027 /* SettingsCellModel.swift in Sources */,
 				E20F550421011C3E00BCA7A6 /* ProductSheetParser.swift in Sources */,
 				E20F550A21011C3E00BCA7A6 /* ProductSheetCoordinator.swift in Sources */,
 				E20F54F421011C3E00BCA7A6 /* HomeParser.swift in Sources */,
@@ -959,17 +1080,19 @@
 				E20F550F21011C3E00BCA7A6 /* ReaderCoordinator.swift in Sources */,
 				E20F550621011C3E00BCA7A6 /* InfoProductSheetResponse.swift in Sources */,
 				E20F551021011C3E00BCA7A6 /* ReaderViewController.swift in Sources */,
+				420ECA81210CBAF700EBA027 /* SettingsTableViewCell.swift in Sources */,
 				E20F54F021011C3E00BCA7A6 /* Member.swift in Sources */,
 				E20F54F721011C3E00BCA7A6 /* PricingProductHomeResponse.swift in Sources */,
 				E20F55432101267C00BCA7A6 /* LibraryRepository.swift in Sources */,
 				E20F550E21011C3E00BCA7A6 /* ProductSheetViewController.swift in Sources */,
-				E20F54E821011C3E00BCA7A6 /* SettingsViewController.swift in Sources */,
 				E20F550521011C3E00BCA7A6 /* ProductSheetWebservices.swift in Sources */,
 				E20F54FB21011C3E00BCA7A6 /* HomeCoordinator.swift in Sources */,
 				E20F550221011C3E00BCA7A6 /* HomeTableViewController.swift in Sources */,
 				E20F550B21011C3E00BCA7A6 /* ProductSheet.swift in Sources */,
 				E20F550921011C3E00BCA7A6 /* ProductProductSheetResponse.swift in Sources */,
 				E20F53C42101185A00BCA7A6 /* AppDelegate.swift in Sources */,
+				420ECA77210CB73600EBA027 /* SettingsTableViewController.swift in Sources */,
+				420ECA79210CB81300EBA027 /* SettingsViewModel.swift in Sources */,
 				E20F55492101267C00BCA7A6 /* LibraryViewController.swift in Sources */,
 				E20F551B21011CDD00BCA7A6 /* ApplicationCoordinator.swift in Sources */,
 				E20F54EF21011C3E00BCA7A6 /* UserManager.swift in Sources */,
@@ -979,6 +1102,8 @@
 				E20F551321011C3E00BCA7A6 /* Network.swift in Sources */,
 				E20F55482101267C00BCA7A6 /* LibraryBookTableViewCell.swift in Sources */,
 				E20F55442101267C00BCA7A6 /* LibraryWebservices.swift in Sources */,
+				420ECA8B210E499900EBA027 /* CTAButton.swift in Sources */,
+				420ECA85210CD68300EBA027 /* NavigationBarFactory.swift in Sources */,
 				E20F54F321011C3E00BCA7A6 /* FavoritesViewController.swift in Sources */,
 				E20F551221011C3E00BCA7A6 /* Model.swift in Sources */,
 				E20F550121011C3E00BCA7A6 /* HomeProductCollectionViewCell.swift in Sources */,
@@ -991,6 +1116,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420ECA86210DA8CA00EBA027 /* ProductSheetCoordinator.swift in Sources */,
 				E20F53DC2101185D00BCA7A6 /* RaweeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -999,6 +1125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420ECA87210DA8CA00EBA027 /* ProductSheetCoordinator.swift in Sources */,
 				E20F53E72101185D00BCA7A6 /* RaweeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

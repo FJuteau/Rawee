@@ -5,6 +5,7 @@ target 'Rawee' do
 
 	pod 'Firebase/Core'
 	pod 'Firebase/Firestore'
+	pod 'FirebaseUI'
 	pod 'Fabric'
 	pod 'Crashlytics'
   
