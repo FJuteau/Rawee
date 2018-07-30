@@ -21,15 +21,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private var applicationCoordinator: ApplicationCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        firebaseInit()
+        autologin()
+        
         let window = UIWindow(frame: UIScreen.main.bounds)
         let applicationCoordinator = ApplicationCoordinator(window: window)
 
         self.window = window
         self.applicationCoordinator = applicationCoordinator
 
-        firebaseInit()
-        autologin()
-        
         applicationCoordinator.start()
         return true
     }
@@ -58,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             auth, user in
             if let user = user {
                 // User is signed in.
-                print(user.photoURL)
+                print(user)
             } else {
                 // No user is signed in.
             }
